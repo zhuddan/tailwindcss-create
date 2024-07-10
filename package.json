@@ -1,0 +1,19 @@
+{
+  "name": "tailwindcss-create",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -w -i ./styles.css -o ./weapp-base.css --config ./tailwind.config.js"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.3",
+    "eslint": "9.5.0"
+  }
+}
