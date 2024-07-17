@@ -92,9 +92,8 @@ module.exports = {
         { pattern: new RegExp(`^text-(${Object.keys(fontSize).join('|')})$`) }, // font-size
         { pattern: new RegExp(`^(text|bg|border)-(${Object.keys(colors).join('|')})$`) }, // colors
         { pattern: /^text-(left|center|right|justify|start|end)$/ }, // text-algin
-        { pattern: /^((min-|max-)(w|h)?|(m|p)(x|y?)|size)-\d+$/ }, // size
-        { pattern: /^((m|p)(x|y?))-\d$/ }, // size
         { pattern: /^((min-|max-)(w|h)?|size)-\d{2,}$/ }, // size
+        { pattern: /^(m|p)(x?|y?|l?|r?|b?|t?)-\d+$/ }, // size (m|p)(x?|y?|l?|r?|b?|t?)|
         { pattern: /^text-((no)?wrap|balance|pretty)$/ }, // Text Wrap
         { pattern: /^whitespace-\w+$/ }, // whitespace
         { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/ }, // font-weight
